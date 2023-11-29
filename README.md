@@ -14,11 +14,11 @@
 
 
 ## Fonctionnalités
- 1. Outils
+1. Outils
  	 - Générateur Ultime
 	 - Convertisseur Ultime
 	 -  Analyseur de Texte
- 2. Jeux
-        	- Pierre, Feuille, Ciseaux
-	- Juste Prix
-	- Devine le Mot
+2. Jeux
+    	 - Pierre, Feuille, Ciseaux
+	 - Juste Prix
+	 - Devine le Mot
