@@ -18,8 +18,8 @@
 1. Outils
    	- Générateur Ultime
 	- Convertisseur Ultime
-        -  Analyseur de Texte
-2. Jeux
+        - Analyseur de Texte
+2. Jeux  
         - Pierre, Feuille, Ciseaux
-	 - Juste Prix
-	 - Devine le Mot
+	- Juste Prix
+        - Devine le Mot
