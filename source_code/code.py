@@ -8,7 +8,6 @@ from time import sleep
 from better_profanity import profanity
 from unidecode import unidecode
 
-
 def toolBox():
     sleep(0.5)
     system("cls")
@@ -81,7 +80,7 @@ def opt_o():
             elif answer == "0":
                 print("Vous allez Retour le logiciel dans 5 secondes...")
                 sleep(2.7)
-                print("toolBox...")
+                print("ToolBox...")
                 sleep(1.8)
                 opt_o()
 
@@ -462,7 +461,7 @@ def opt_o():
             elif answer == "0":
                 print("Vous allez Retour le logiciel dans 5 secondes...")
                 sleep(2.7)
-                print("toolBox...")
+                print("ToolBox...")
                 sleep(1.8)
                 opt_o()
 
@@ -1088,7 +1087,7 @@ def opt_o():
             elif answer == "0":
                 print("Vous allez Retour le logiciel dans 5 secondes...")
                 sleep(2.7)
-                print("toolBox...")
+                print("ToolBox...")
                 sleep(1.8)
                 opt_o()
 
@@ -1382,16 +1381,15 @@ def opt_j():
     print("")
     print("1. Pierre, Feuille, Ciseaux")
     print("2. Juste Prix")
-    print("3. Dés")
-    print("4. Devine le Mot")
+    print("3. Devine le Mot")
     # ajt les autres jeux
     print("0. Retour")
     sleep(1)
     print("")
     print("Auquel voulez-vous jouer ?")
     answer3 = input("Entrez son Code  ==>  ")
-    if answer3 not in "01234":
-        print("Entrez 1, 2, 3 ou 4 pour faire un choix! Pour Quitter, taper 0.")
+    if answer3 not in "0123":
+        print("Entrez 1, 2 ou 3 pour faire un choix! Pour Quitter, taper 0.")
         sleep(1)
         toolBox_()
     if answer3 == "0":
@@ -1423,7 +1421,7 @@ def opt_j():
             elif answer == "0":
                 print("Vous allez Quitter le logiciel dans 5 secondes...")
                 sleep(2.7)
-                print("toolBox...")
+                print("ToolBox...")
                 sleep(1.8)
                 opt_j()
 
@@ -1586,106 +1584,12 @@ def opt_j():
             elif answer == "0":
                 print("Vous allez Quitter le logiciel dans 5 secondes...")
                 sleep(2.7)
-                print("toolBox...")
+                print("ToolBox...")
                 sleep(1.8)
                 opt_j()
 
         justprice()
     elif answer3 == "3":
-
-        def game():
-            start = input("Lancer les dés ? ('o' ou 'n') ==>  ")
-            statut = False
-            p_score = 0
-            c_score = 0
-            turn = 0
-            while statut == False:
-                if start == "o":
-                    choice = [1, 2, 3, 4, 5, 6]
-                    computer_choice = random.choices(choice, k=2)
-                    user_choice = random.choices(choice, k=2)
-                    user = sum(user_choice)
-                    computer = sum(computer_choice)
-                    if computer > user:
-                        print("Lancement des dés ...")
-                        sleep(2)
-                        print("Votre adversaire gagne !")
-                        print(f"Vous avez obtenu {user_choice[0]} et {user_choice[1]}")
-                        print(
-                            f"Votre adversaire a obtenu {computer_choice[0]} et {computer_choice[1]}"
-                        )
-                        print(user, "<", computer)
-                        turn += 1
-                        c_score += 1
-                        sleep(1)
-                    elif computer == user:
-                        print("Lancement des dés ...")
-                        sleep(2)
-                        print(
-                            f"Vous avez obtenu {user_choice[0]} et {user_choice[1]} comme votre adversaire !"
-                        )
-                        print("Egalité ! Plus 1 partout !")
-                        c_score += 1
-                        p_score += 1
-                        turn += 1
-                        sleep(1)
-                    else:
-                        print("Lancement des dés ...")
-                        sleep(2)
-                        print("Votre avez gagné !")
-                        print(f"Vous avez obtenu {user_choice[0]} et {user_choice[1]}")
-                        print(
-                            f"Votre adversaire a obtenu {computer_choice[0]} et {computer_choice[1]}"
-                        )
-                        print(user, ">", computer)
-                        turn += 1
-                        p_score += 1
-                        sleep(1)
-                elif start == "n":
-                    sleep(1)
-                    print("Accueil...")
-                    sleep(1.5)
-                    dice()
-                elif start not in "o" or "n":
-                    print("Entrez 'o' ou 'n' pour commencez !")
-                    game()
-                if turn == 5:
-                    statut = True
-                    print("\nFin de la partie !!")
-                    if p_score > c_score:
-                        print("Vous avez gagné !")
-                        print("Il y a", p_score, "à", c_score, "pour vous !")
-                    elif c_score > p_score:
-                        print("C'est perdu !! Dommage !")
-                        print("Il y a", c_score, "à", p_score, "pour lui !")
-
-        def dice():
-            sleep(1)
-            system("cls")
-            print("")
-            print("----------")
-            print("JEU DE DÉS")
-            print("----------")
-            print("")
-            print("1. Jouer au Dés")
-            print("0. Retour")
-            print("Quelle action voulez-vous effectuer ?")
-            answer = input("==>  ")
-            if answer not in "01":
-                print("Entrez 1 pour jouer. Pour Retour, taper 0")
-                sleep(1.5)
-                dice()
-            if answer == "1":
-                game()
-            elif answer == "0":
-                print("Vous allez Quitter le logiciel dans 5 secondes...")
-                sleep(2.7)
-                print("toolBox...")
-                sleep(1.8)
-                opt_j()
-
-        dice()
-    elif answer3 == "4":
         sleep(1)
 
         def wrdguess():
@@ -1710,7 +1614,7 @@ def opt_j():
             elif answer == "0":
                 print("Vous allez Quitter le logiciel dans 5 secondes...")
                 sleep(2.7)
-                print("toolBox...")
+                print("ToolBox...")
                 sleep(1.8)
                 opt_j()
 
