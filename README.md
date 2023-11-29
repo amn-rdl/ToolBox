@@ -18,5 +18,4 @@
  2. Jeux
     - Pierre, Feuille, Ciseaux
 	- Juste Prix
-	- Dés
 	- Devine le Mot
