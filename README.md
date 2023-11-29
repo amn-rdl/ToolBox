@@ -19,7 +19,6 @@
 	 - Convertisseur Ultime
 	 -  Analyseur de Texte
  2. Jeux
-    - Pierre, Feuille, Ciseaux
+    	- Pierre, Feuille, Ciseaux
 	- Juste Prix
-	- Dés
 	- Devine le Mot
